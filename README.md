@@ -1,7 +1,9 @@
 # Amazon Cart ASIN Injector — Chrome Extension
 
 A lightweight Chrome extension that shows the ASIN (Amazon Standard Identification Number) for each item directly inside the price block of your Amazon Shopping Cart.
+
 This comes in handy if the company you work for requires you to put the ASIN on your Purchase Orders.
+
 ---
 
 ## Features
