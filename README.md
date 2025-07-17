@@ -77,7 +77,7 @@ This project is licensed under the [Unlicense](https://unlicense.org/).
 >  
 > No permissions needed. No attribution required. No lawsuits expected (unless you’re doing something *really* dumb).  
 >  
-> Basically, if you can think of a use for this, **go nuts**. Just don’t email me if your toaster starts ordering ASINs off Amazon.
+> Basically, if you can think of a use for this, **go nuts**. Just don’t email me if your toaster starts ordering other appliances off Amazon.
 
 ---
 
