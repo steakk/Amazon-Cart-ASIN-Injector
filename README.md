@@ -1,61 +1,91 @@
-# Amazon Cart ASIN Injector — Chrome Extension
+# 🛒 Amazon Cart ASIN Injector — Chrome Extension
 
-A lightweight Chrome extension that shows the ASIN (Amazon Standard Identification Number) for each item directly inside the price block of your Amazon Shopping Cart.
+A lightweight Chrome extension that displays the **ASIN** (Amazon Standard Identification Number) for each item directly inside the **price block** of your Amazon Shopping Cart.
 
-This comes in handy if the company you work for requires you to put the ASIN on your Purchase Orders.
-
----
-
-## Features
-
-- Active **only** on Amazon cart pages (`https://www.amazon.com/gp/cart/view.html*`)
-- Scrapes the product URL of each cart item to extract the ASIN
-- Injects the ASIN visibly into the price block for quick reference
+This is especially useful if your company requires the ASIN to be included on **purchase orders**.
 
 ---
 
-## Installation (Manual)
+## ✨ Features
 
-> Chrome extensions outside the Chrome Web Store require **Developer Mode** for installation.
+- 🔒 Works **only** on Amazon cart pages (`https://www.amazon.*/gp/cart/view.html*`)
+- 🔍 Scrapes the product URL of each cart item to extract the ASIN
+- 🧾 Injects the ASIN visibly into each item’s **price block** for quick reference
+- 🧠 Includes a summary text area that can be copied directly into Excel or Google Sheets
 
-1. Download or clone this repository to your local machine.
+---
 
+## 🚀 Installation
+
+You can install the extension in one of two ways:
+
+### 📦 Option 1: Using the `.crx` File (Easier)
+
+1. [Download the `.crx` file from the [Releases](https://github.com/steakk/Amazon-Cart-ASIN-Injector/releases)].
 2. Open Chrome and go to `chrome://extensions/`
+3. **Drag and drop** the `.crx` file into the page
+4. Click **"Add Extension"** when prompted
+5. ✅ You're done!
 
-3. Enable **Developer Mode** (toggle switch in the top-right).
-
-4. Click **Load unpacked** and select the folder where you saved this extension.
-
-5. Visit your Amazon Shopping Cart page to see the ASINs appear in each item’s price block.
-
----
-
-## Usage Notes
-
-- The extension runs only on Amazon's cart page URL pattern.
-- If the cart page structure changes, the extension may require updates.
-- No personal data is collected or transmitted by this extension.
+> ℹ️ You may need to enable Developer Mode to install manually signed extensions
 
 ---
 
-## Development
+### 🛠️ Option 2: Load as Unpacked Extension (For Developers)
 
-- Built using Manifest V3 for Chrome extensions.
-- Content script scrapes ASINs from product URLs and injects into `.sc-item-price-block`.
-- Minimal permissions (`scripting` and Amazon cart host access).
-
----
-
-## License
-
-MIT License © Your Name
+1. Clone or download this repository to your local machine.
+2. Open Chrome and go to `chrome://extensions/`
+3. Enable **Developer Mode** (top-right toggle)
+4. Click **Load unpacked**
+5. Select the folder containing the extension files
+6. ✅ Done!
 
 ---
 
-## Feedback
+## 💡 Usage Notes
 
-If you find issues or want to suggest improvements, feel free to open an issue or submit a pull request.
+- Runs only on Amazon's cart page — other pages are unaffected
+- If Amazon updates their cart page structure, the extension may need adjustments
+- No personal data is collected or transmitted — this runs 100% locally in your browser
 
 ---
 
-*Happy shopping!*
+## 🔧 Development
+
+- Built using **Manifest V3** for Chrome Extensions
+- Uses a **content script** to:
+  - Scrape product links
+  - Extract ASINs
+  - Inject a readable ASIN tag into the DOM
+  - Create a tab-delimited summary for copy-paste use
+- Requires only minimal permissions (`scripting` and access to Amazon cart pages)
+
+---
+
+## ⚖️ License
+
+This project is licensed under the [Unlicense](https://unlicense.org/).
+
+> This is free and unencumbered software released into the public domain.  
+>  
+> That means you can:  
+> • Steal it 🏴‍☠️  
+> • Fork it 🍴  
+> • Break it 🔨  
+> • Pretend you wrote it 🧠  
+> • Use it to automate your dog’s Amazon cart 🐶  
+>  
+> No permissions needed. No attribution required. No lawsuits expected (unless you’re doing something *really* dumb).  
+>  
+> Basically, if you can think of a use for this, **go nuts**. Just don’t email me if your toaster starts ordering ASINs off Amazon.
+
+---
+
+## 💬 Feedback
+
+Got an idea, a bug, or want to say thanks?  
+Open an [issue](https://github.com/steakk/Amazon-Cart-ASIN-Injector/issues) or submit a [pull request](https://github.com/steakk/Amazon-Cart-ASIN-Injector/pulls).
+
+---
+
+🛍️ *Happy shopping — and may your purchase orders be ASIN-perfect!*
